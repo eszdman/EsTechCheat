@@ -1,6 +1,7 @@
 package com.eszdman.eshax;
 
 import com.eszdman.eshax.Functions.FuncList.FullBright;
+import com.eszdman.eshax.Functions.Functions;
 import com.eszdman.eshax.Wrapper.Events;
 import com.eszdman.eshax.Wrapper.Wrapper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -22,9 +23,10 @@ public class EsHaxMod {
     public void init(FMLInitializationEvent event)
     {
         INSTANCE = this;
+        Wrapper.init();
+        Functions.InitAll();
         EventRegister.register(MinecraftForge.EVENT_BUS,new Events());
         EventRegister.register(FMLCommonHandler.instance().bus(), new Events());
-        Wrapper.init();
         loaded = true;
     }
 }
