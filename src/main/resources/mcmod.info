@@ -1,0 +1,16 @@
+[
+{
+  "modid": "EsHaxMod",
+  "name": "EsHax Mod",
+  "description": "Example EsHax mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Eszdman"],
+  "credits": "Just hacking with eszdman",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
