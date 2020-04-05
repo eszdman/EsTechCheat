@@ -4,23 +4,21 @@ import com.eszdman.eshax.Functions.Function;
 import com.eszdman.eshax.Wrapper.Wrapper;
 import org.lwjgl.input.Keyboard;
 
-public class FullBright extends Function {
-    private float oldbr;
+public class XRay extends Function {
     @Override
     public void override() {
-        name = "FullBright";
-        addkeybind(Keyboard.KEY_C);
+        name = "XRay";
+        addkeybind(Keyboard.KEY_X);
         AddBind = true;
     }
 
     @Override
     public void enable() {
-        oldbr = Wrapper.mc.gameSettings.gammaSetting;
-        Wrapper.mc.gameSettings.gammaSetting = 100;
+
     }
 
     @Override
     public void disable() {
-        Wrapper.mc.gameSettings.gammaSetting = oldbr;
+
     }
 }
